@@ -20,3 +20,17 @@ zuul:
     feignapi:
       path: /feignapi/**
       serviceId: fegin-service
+
+#禁用指定的filter
+
+#  Servlet30WrapperFilter:
+#      pre:
+#        disable: true
+#
+#  FormBodyWrapperFilter:
+#      pre:
+#        disable: true
+#
+#  ServletDetectionFilter:
+#        pre:
+#          disable: true

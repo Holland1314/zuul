@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * Created by shileichao on 2018/8/30.
  */
-@Component
+//@Component
 public class MyFilter extends ZuulFilter {
 
     private static final Logger log=LoggerFactory.getLogger("MyFilter");
