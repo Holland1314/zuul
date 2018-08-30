@@ -1,0 +1,22 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: service-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:1111/eureka/,http://peer2:2222/eureka/
+zuul:
+  prefix: /v1
+  routes:
+    hiapi:
+      path: /hiapi/**
+      serviceId: springboot-client
+
+    ribbonapi:
+      path: /ribbonapi/**
+      serviceId: ribbion
+    feignapi:
+      path: /feignapi/**
+      serviceId: fegin-service
